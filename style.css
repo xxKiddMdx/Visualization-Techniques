@@ -1,0 +1,242 @@
+:root {
+  --color-bg: #69f7be;
+  --color-text-main: #000000;
+  --color-primary: #ffff00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+.btn--remix img {
+  margin-right: 0.5rem;
+}
+.btn--remix:hover {
+  background-color: #d0fff1;
+}
+
+/* Navigation grid */
+.divider {
+  padding: 0 1rem;
+}
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/
+
+body {
+  font-family: HK Grotesk;
+}
+
+/* Page structure */
+.wrapper {
+  min-height: var(--wrapper-height);
+  background-color: #f4eeff;
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.title {
+  color: #424874;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  color: #424874;
+}
+
+/* Very light scaling for our illustration */
+.datavis {
+  width: 550px;
+  height: 400px;
+  contrast: ;
+}
+
+/* Instructions */
+.instructions {
+  margin: 1rem auto 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  
+}
+.grid-container-bad {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-content: center;
+}
+
+.grid-item {
+  flex-direction: row;
+  background-color: #dcd6f7;
+  color: #393e46;
+  margin: 15px;
+  font-size: 15px;
+  line-height: 1.4;
+  display: inline-block;
+  position: relative;
+border-radius: 25px;
+  border: 2px solid #A6B1E1;  
+}
+.redesign {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 15px;
+  flex-direction: row;
+  color: 393e46;
+  display: flex;
+}
+.redesign-item {
+  flex-direction: row;
+  background-color: #dcd6f7;
+  color: 393e46;
+  margin: 15px;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  width: 400px;
+  border-radius: 25px;
+  border: 2px solid #A6B1E1;  
+}
+
+.img-div {
+  display: flex;
+  justify-content: center;
+}
+.redesign_sketch {
+  width: 300px;
+  height: 300px;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  display: center;
+}
+ul {
+  font-size: 13px;
+}
+
+figcaption {
+  font-size: 10px;
+  text-align: center;
+}
+
+.par-head {
+  text-align: center;
+  color: #424874;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: medium;
+  text-decoration: underline;
+}
+.par-head-winner {
+  background-color: yellow;
+  text-align: center;
+  color: #424874;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: medium;
+  text-decoration: underline;
+}
+
+.redesign-info {
+  text-align: center;
+  color: #424874;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.centeredli {
+  text-align: center;
+  list-style-position: inside;
+}
+
+/* Button - Add it from the README instructions */
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 500ms;
+}
+
+/* Subheading */
+h2 {
+  color: #2800ff;
+}
+
+/* Interactive image */
+.illustration:active {
+  transform: translateY(5px);
+}
+
+.footer {
+  justify-content: center;
+  text-align: center;
+  margin: 1rem auto 0;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  border-top: 4px solid #ffffff;
+  color: #424874;
+}
+
+.footercontainer {
+  grid-template-row: auto auto auto;
+  flex-direction: row;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 95%;
+  justify-content: space-between;
+  color: #424874;
+}
+
+/* Button dip
+- Toggling this class on and off will move it down and up again
+- The button transition property above determines the speed of the translate (500ms)
+*/
+.dipped {
+  transform: translateY(5px);
+}
